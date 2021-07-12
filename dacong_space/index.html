@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>智能账单</title>
+        <link rel="stylesheet" type="text/css" href="app.css">
+    </head>
+    <body>
+        <header>
+            <!-- 超链接，logo -->
+            <a href="#" class="logo">Ray</a> 
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Game Center</a></li>
+                <li><a href="#">Photo Space</a></li>
+                <li><a href="#sec">Explore</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="img/stars.png" id="stars">
+            <img src="img/moon.png" id="moon">
+            <img src="img/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Introduction</h2>
+            <a href="#sec" id="btn">Expand</a> <!--超链接，转到id为sec的部分-->
+            <img src="img/mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>What about this Web</h2>
+            <p>*********************************************
+                *********************************************
+                *********************************************
+                *********************************************<br><br>
+                *********************************************
+                *********************************************
+                *********************************************
+                *********************************************<br><br>
+                *********************************************
+                *********************************************
+                *********************************************
+                *********************************************
+            </p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            //设置一个Listener来检测画面事件，来改变动画效果
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 0.8 + 'px';
+                mountains_behind.style.top = value * 0.3 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 2 + 'px';
+                text.style.marginTop = value * 1.2 + 'px';
+                btn.style.marginTop = value * 1.1 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
