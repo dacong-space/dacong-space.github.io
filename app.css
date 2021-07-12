@@ -1,19 +1,4 @@
-
-HTML 
-{
-OVERFLOW-Y: auto; OVERFLOW-X: auto
-}
-    
-html{overflow-x : hidden ; height : 100% ; margin : 0 ; padding : 0 ; }
-body{ height : 99% ; margin : 0 ;  overflow-x : hidden ; } 
-    
-html { overflow: scroll; }
-
-
-html { overflow-x: scroll; }
-
-
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 *
 {
