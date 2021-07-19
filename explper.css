@@ -32,7 +32,6 @@ header .logo
     font-weight: 700;
     text-decoration: none; /* 控制text装饰 */
     font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 header ul
