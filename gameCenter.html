@@ -3,7 +3,7 @@
 
 <head>
     <title>GameCenter</title>
-    <link rel="stylesheet" type="text/css" href="gameCenter.css">
+    <link rel="stylesheet" type="text/css" href="/css/game/gameCenter.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <h2>Game List</h2>
         <ul>
             <li><a href="#huaban">画板</a></li>
-            <li><a href="#">贪吃蛇</a></li>
+            <li><a href="#tanchishe">贪吃蛇</a></li>
             <li><a href="#">飞机大战</a></li>
             <li><a href="#">更多</a></li>
         </ul>
@@ -49,6 +49,10 @@
         <br>
         <br>
     </div>
+
+<!----------------------------------------------------------->
+<!---------------------------画板游戏-------------------------->
+<!----------------------------------------------------------->
     <div class="huaban" id="huaban">
         <h2>画板</h2>
         <div class="bodySet">
@@ -109,11 +113,26 @@
                 <label for="pen"><b>Change Range:</b></label>
                 <input type="range" min="1" max="100" class="pen_range" id="pen_range" value="50">
             </div>
-    
             <script src="/js/game/huaban.js"></script>
-    
         </div>
     </div>
+
+<!----------------------------------------------------------->
+<!---------------------------贪吃蛇游戏------------------------>
+<!----------------------------------------------------------->
+<div class="tanchishe" id="tanchishe">
+    <h2>贪吃蛇</h2>
+<p>
+    贪吃蛇（Snake）是一个起源于1976年的街机游戏 Blockade。<br>
+    此类游戏在1990年代由于一些具有小型屏幕的移动电话的引入而再度流行起来，<br>
+    在现在的手机上基本都可安装此小游戏。版本亦有所不同。Snake, Telmac 1800, <br>
+    CHIP-8, 1978 在游戏中，玩家操控一条细长的直线（俗称蛇或虫），它会不停前进，<br>
+    玩家只能操控蛇的头部朝向（上下左右），一路拾起触碰到之物（或称作“豆”），<br>
+    并要避免触碰到自身或者其他障碍物。每次贪吃蛇吃掉一件食物，它的身体便增长一些。<br>
+    吃掉一些食物后会使蛇的移动速度逐渐加快，让游戏的难度渐渐变大。游戏设计大致分为<br>
+    四面都有墙(都不可穿越)以及某部分的墙可以穿越，以及四面墙都可以穿越的模式。<br>
+</p>
+</div>
 </body>
 
 </html>
