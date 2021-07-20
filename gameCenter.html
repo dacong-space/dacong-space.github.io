@@ -19,7 +19,101 @@
     </header>
     <section>
         <img src="img/page_img/game.jpg" id="stars">
+        <a href="#sec" id="btn">Let Start</a>
     </section>
+    <div class="sec" id="sec">
+        <h2>Game List</h2>
+        <ul>
+            <li><a href="#huaban">画板</a></li>
+            <li><a href="#">贪吃蛇</a></li>
+            <li><a href="#">飞机大战</a></li>
+            <li><a href="#">更多</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="huaban" id="huaban">
+        <h2>画板</h2>
+        <div class="bodySet">
+            <div class="row">
+                <div class="column">
+                    <h3>Welcome to Canvas!</h3>
+                    <p style="color: bisque;">
+                        欢迎来到创意画板...
+                    </p>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p class="status"><b>Status: </b></p>
+                    <p class="stat" id="stat"> Ready</p>
+    
+                </div>
+                <div class="column">
+                    <div class="column_2">
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            使用介绍
+                        </h3>
+                        <p id="text1">
+                            <li style="color: bisque;">点击 'Start Recording' 开始记录.</li>
+                            <li style="color: bisque;">点击 'Stop Recording' 停止记录.</li>
+                            <li style="color: bisque;">点击 'Play' 播放记录.</li>
+                            <li style="color: bisque;">点击 'Save Recording' 保存记录</li>
+                            <li style="color: bisque;">点击下方选项可以更改画笔颜色及尺寸.</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="column2">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="column2">
+                    <div class="button">
+                        <button onclick="rec.stratRecording(); document.getElementById('stat').innerHTML = 'Recording...'"
+                            type="button" class="stratRecording" id="stratRecording">Strat<br>Recording</button><br>
+                        <button
+                            onclick="rec.stopRecording(); document.getElementById('stat').innerHTML = 'Recording stopped'"
+                            type="button" class="stopRecording" id="stopRecording">Stop<br>Recording</button><br>
+                        <button onclick="rec.play()" type="button" class="play" id="play">Play</button><br>
+                        <button onclick="rec.saveRecording(); document.getElementById('stat').innerHTML = 'Recording saved'"
+                            type="button" class="saveRecording" id="saveRecording">Save<br>Recording</button><br>
+                        <button
+                            onclick="rec.retrieveRecording(); document.getElementById('stat').innerHTML = 'Recording loaded'"
+                            type="button" class="retrieveRecording"
+                            id="retrieveRecording">Retrieve<br>Recording</button><br>
+                        <button onclick="rec.clearCanvas()" type="button" class="clearCanvas" id="clearCanvas">Clear
+                            Canvas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="changeColor">
+                <label for="color"><b>Change Color:</b></label>
+                <input type="color" value="#3D93B8" id="color" class="color">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="pen"><b>Change Range:</b></label>
+                <input type="range" min="1" max="100" class="pen_range" id="pen_range" value="50">
+            </div>
+    
+            <script src="/js/game/huaban.js"></script>
+    
+        </div>
+    </div>
 </body>
 
 </html>

@@ -89,3 +89,247 @@ section img
     object-fit:  cover;
     pointer-events: none;
 }
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px; /* 按钮大小 */
+    border-radius: 60px;
+    background: rgb(255, 255, 255);
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(220px); /* 按钮位置 */
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1.2em; /* 控制字体大小 */
+    color: #fff;
+}
+
+/* 主题部分UI */
+
+/* 游戏导航栏 */
+/* .sec h2
+{
+    left: 20px;
+} */
+.sec ul
+{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.sec ul li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+.sec ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+/*************************************************************/
+/********************     画板UI     **************************/
+/*************************************************************/
+.huaban
+{
+    background-color: #1c0522;
+    color: azure;
+}
+.huaban h2
+{
+    font-size: 300%;
+    color: bisque;
+    position: relative;top: 10px;
+    position: relative;left: 220px;
+}
+.huaban h3
+{
+    color: bisque;
+}
+#canvas {
+    border:1px solid #000000;
+}
+.color {
+    border: none; 
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);
+}
+
+.pen_range {
+    position: relative;top: 4px;
+
+}
+
+.column {
+    float: left;
+    /* width: 50%; */
+    padding: 10px;
+    height: 200px;
+    font-family: italic 1em Georgia, serif;
+}
+
+.column_2 {
+    position: relative;
+    left: 50px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column2 {
+    float: left;
+    /* width: 50%; */
+    padding: 10px;
+    height: 400px;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.changeColor {
+    font-family: Monospace;
+    position: relative;top: 70px;
+    position: relative;left: 100px;
+}
+
+.status {
+    font-size: 120%;
+    position: relative;top: -20px;
+    position: relative;left: 80px;
+    color: bisque;
+}
+.stat {
+    font-size: 120%;
+    position: relative;top: -47px;
+    position: relative;left: 155px;
+    color: bisque;
+}
+
+
+.stratRecording {
+    background-color: rgb(192, 231, 205);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 28px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);
+    margin-bottom: 15px;
+}
+.stratRecording:active{
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+
+.stopRecording {
+    background-color: rgb(253, 189, 199);
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    padding: 10px 28px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);    
+    margin-bottom: 15px;
+}
+.stopRecording:active{
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.play {
+    background-color: #b8f1ed;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    padding: 18px 48px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);
+    margin-bottom: 15px;
+}
+.play:active{
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.saveRecording {
+    background-color: #f1ccb8;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    padding: 10px 28px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);    
+    margin-bottom: 15px;
+}
+.saveRecording:active{
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.retrieveRecording {
+    background-color: #f1f1b8;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    padding: 10px 28px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);
+    margin-bottom: 15px;
+}
+.retrieveRecording:active{
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.clearCanvas {
+    background-color: #b7d28d;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    padding: 18px 17px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px  rgba(0,0,0,0.19);
+    margin-bottom: 15px;
+}
+.clearCanvas:active{
+    border-radius: 12px;
+    opacity: 0.5;
+}
+
+.button {
+    position: relative;top: 16px;
+    position: relative;left: 25px;
+}
+
+body {
+    background-color: rgb(246, 239, 230);
+}
+

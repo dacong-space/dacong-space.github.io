@@ -69,7 +69,7 @@ section
     align-items: center;
     overflow: hidden;
 }
-section::before
+section::before /* 控制图层渐变 */
 {
     content: '';
     position: absolute;
@@ -88,4 +88,21 @@ section img
     height: 100%;
     object-fit:  cover;
     pointer-events: none;
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1.2em; /* 控制字体大小 */
+    color: #fff;
 }
